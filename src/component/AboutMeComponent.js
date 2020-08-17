@@ -12,7 +12,7 @@ class About extends Component
                 <div className="about-main">
                     <p>
                       Hey, My name is Mohit Mishra, and i am a front-end developer currently living in Indore and pursuing my B.Tech CSE, so ya i have been coding for more than
-                      a year now and looking to learn more every day and love the fact about web development that you make and see what you think of.
+                      a year now and looking to learn more every day and trying to progress and learn each day with new tasks.
                     </p>
                     <p>
                        So, I started my journey as a coder with HTML, CSS and started looking for more things and learnt JS, thereafter i 

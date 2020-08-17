@@ -4,8 +4,14 @@ class Contact extends Component
 {
     render(){
         return(
-           <div>
-           </div>
+            <div>
+                <div className="contact-heading">
+                <h1>Contact Me</h1>
+                </div> 
+                <div className="contact-content">
+
+                </div>
+            </div>
         );
     }
 }
