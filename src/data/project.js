@@ -3,7 +3,7 @@ const project = {
         {
             "id": "1",
             "index": 0,
-            "img": "../assets/img/pro1.jpg",
+            "img": "/assets/img/pro1.jpg",
         },
         {
             "id": "2",

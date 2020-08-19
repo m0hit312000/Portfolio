@@ -1,13 +1,13 @@
 import React,{ Component } from  'react';
 import project from '../data/project';
+import img from '../assets/img/pro1.jpg';
+import '../data/App.scss';
 
 function Card({property}){
     return(
-       <div className="card-carousel">
-          <div className="card">
-              <img src={property.img} alt={property.index}/>
+          <div id={`card-${property.index}`} className="card">
+              <img src={img} alt={property.index}/>
           </div>
-       </div>
     );
 }
 
@@ -44,16 +44,23 @@ class Project extends Component
               </div> 
               <div className="project-content">
                  <div className="card-area">
-                     <button className="next" onClick={() => this.nextProperty()} disabled={property.index === project.properties.length-1}>Next</button>
-                     <button className="previous" onClick={() => this.previousProperty()} disabled={property.index === 0}>Prev</button>
-                     <div className=".card-wrapper">
-                     {
-                        properties.map(property => <Card key={property.id} property={property}/>)
-                     }
+                     <div className="buttons">
+                        <button className="next" onClick={() => this.nextProperty()} disabled={property.index === project.properties.length-1}>Next</button>
+                        <button className="previous" onClick={() => this.previousProperty()} disabled={property.index === 0}>Prev</button>
+                     </div>
+                     
+                     <div className={`card-carousel active-card-${property.index}`}>
+                        <div className="card-wrapper" style={{
+                           "transform": `translate(-${property.index*(100/properties.length)}%)`
+                        }}>
+                           {
+                              properties.map(property => <Card key={property.id} property={property}/>)
+                           }
+                        </div>
                      </div>
                  </div>     
               </div>
-           </div>
+           </div> 
         );
     }
 }
