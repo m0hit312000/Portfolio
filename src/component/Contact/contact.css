@@ -1,0 +1,25 @@
+.contact{
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+  }
+  .contact-content{
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(0,0,0,0.3); 
+  }
+  .contact-heading{
+    position: absolute;
+    font-family: 'Rajdhani', sans-serif;
+    color: silver  ;
+    font-size: 100px;
+    top: 20%;
+    left: 10vw;
+    height: 200px;
+    width: 50%;
+  }
+
+  
+
+/* ************************************************************ Mobile ********************************************************* */  

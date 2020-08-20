@@ -1,7 +1,8 @@
 import React,{ Component } from  'react';
-import project from '../data/project';
-import img from '../assets/img/pro1.jpg';
-import '../data/App.scss';
+import project from './project';
+import img from '../../assets/img/pro1.jpg';
+import './project.scss';
+import './project.css';
 
 function Card({property}){
     return(

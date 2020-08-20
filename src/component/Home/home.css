@@ -1,0 +1,60 @@
+.landing_page{
+    max-width: 100%;
+    height: 100vh;
+    transition: scroll 0.4s ease-out;
+  }
+  .triangle_right {
+    width: 0;
+    height: 0;
+    border-top: 100vh solid transparent;
+    border-left: 1100px solid rgba(255, 239, 239, 0.3);
+  }  
+  .profile_pic {
+    position: absolute;
+    top: 320px;
+    left: 390px;
+    height: 350px;
+    width: 350px;
+    background-image: url('../../assets/img/profile.jpg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    transform: rotateZ(-10deg);
+  }
+  .name_head{
+    position: absolute;
+    height: 400px;
+    width: 600px;
+    left: 45%;
+    top: 40vh;
+    font-family: 'Titillium Web', sans-serif;
+    line-height: 50px;
+  }
+  .name_head h1{
+    font-size: 55px;
+    height: 80px;
+  }
+  .name_head h1 i{
+    font-size: 50px;
+    color: #f85959;
+  }
+  .emphasis{
+    color: #f85959; 
+  }
+  .name_head h2{
+     font-size: 30px;
+     word-spacing: 5px;
+  }
+  .name_head a{
+     cursor: pointer;
+  }
+  .name_head a i {
+     font-size: 50px;
+     color: white;
+     margin: 10px;
+  }
+  
+
+
+
+/* ************************************************************ Mobile ********************************************************* */  

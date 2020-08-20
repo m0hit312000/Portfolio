@@ -1,0 +1,159 @@
+.Nav{
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+  }
+  .NavbarItems{
+    background: rgba(255, 255, 255, 0.3);
+    width: 100%;
+    height: 80px;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  } 
+  .NavbarItems ul{
+    list-style: none;
+    padding: 0; 
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-around;
+  }
+  .NavbarItems ul li{
+    position: relative;
+    padding: 0 40px;
+    height: 100%;
+    display: flex;
+  }
+  .NavbarItems ul li a{
+    color: white;
+    z-index: 1;
+    text-decoration: none;
+    font-size: 24px;  
+    padding: 10px 5px;
+  }
+  .NavbarLogo{
+    color: #fff;
+    justify-self: start;
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 30px;
+  }
+  .NavbarItems ul li::before{
+    content: '';
+    position: absolute;
+    height: 33.33%;
+    width: 0;
+    background-color: #f85959;
+    right: 0;
+    z-index: 0;
+    top: 33.33%;
+    transition: all 0.5s;
+  }
+  .NavbarItems ul li::after{
+    content: '';
+    position: absolute;
+    height: 33.33%;
+    width: 0;
+    background-color: #f85959;
+    left: 0;
+    z-index: 0;
+    bottom: 0;
+    transition: all 0.5s;
+  }
+  .NavbarItems ul li a::before{
+    content: '';
+    position: absolute;
+    height: 33.33%;
+    width: 0;
+    background-color: #f85959;
+    left: 0;
+    z-index: 0;
+    bottom: 66.66%;
+    transition: all 0.5s;
+  }
+  .NavbarItems ul li:hover::before,
+  .NavbarItems ul li:hover::after,
+  .NavbarItems ul li:hover a::before{
+    width: 100%; 
+  }
+  .fa-bars, .fa-times{
+    color: #fff;
+  }
+  .menu-icon{
+    display: none;
+  }
+  
+
+
+/* ************************************************************ Mobile ********************************************************* */
+
+
+@media screen and (max-width: 768px){
+
+  .Nav{
+    width: 100%; 
+    top: 0;
+    border-radius: 0;
+    background: rgba(255, 255, 255, 0.3);
+    position: fixed;
+  }
+  .NavbarItems{
+    text-align: center;
+  }
+  .nav-menu{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    top: 80px;
+    background: rgba(0,0,0,0.3);
+    text-align: center;
+    width: 100%;
+    padding: 5px;
+    clip-path: circle(0px at 90% -10%);
+    -webkit-clip-path: circle(0px at 90% -10%);   
+    transition: all .7s ease-in;  
+    pointer-events: none;
+  }
+  .nav-menu-active{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    top: 80px;
+    background: rgba(0,0,0,0.3);
+    text-align: center;
+    width: 100%;
+    padding: 5px;
+    clip-path: circle(100px at 90% -10%);
+    -webkit-clip-path: circle(500px at 90% -10%);
+    transition: all .7s ease-out;    
+    pointer-events: all;
+  }
+  .nav-links{
+    text-align: center;
+    padding: 1rem;
+    display: inline-table;
+  }
+  .NavbarLogo{
+    position: absolute;
+    left: 0;
+  }
+  .menu-icon{
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(-100%,60%);
+    font-size: 1.8rem;
+    cursor: pointer;
+  }
+  .fa-bars{
+    transition: all 3s ease-out;
+  }
+  .fa-times{
+    transition: all .5s ease-in;
+  }
+  .triangle_right {
+    display: none;
+  }
+}

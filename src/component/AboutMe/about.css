@@ -1,0 +1,65 @@
+.about{
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+  }
+  /* width */
+  .about-main::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  /* Track */
+  .about-main::-webkit-scrollbar-track {
+    background: none; 
+  }
+   
+  /* Handle */
+  .about-main::-webkit-scrollbar-thumb {
+    background: #f85959; 
+  }
+  
+  /* Handle on hover */
+  .about-main::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
+  .about-heading{
+    position: absolute;
+    font-family: 'Rajdhani', sans-serif;
+    color: silver  ;
+    font-size: 100px;
+    top: 20%;
+    left: 10vw;
+    height: 200px;
+    width: 50%;
+  }
+  .about-content{
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(0,0,0,0.3);
+  }
+  .about-main{
+    position: absolute;
+    margin: auto;
+    height: 400px;
+    width: 44%;
+    background-color: rgba(0,0,0,0.3);
+    left: 30%;
+    top: 30%;
+    font-size: 30px;
+    padding: 30px;
+    margin: auto;
+    text-align: left;
+    -webkit-box-shadow: 0px 0px 70px -12px rgba(0,0,0,0.64);
+    -moz-box-shadow: 0px 0px 70px -12px rgba(0,0,0,0.64);
+    box-shadow: 0px 0px 70px -12px rgba(0,0,0,0.64);
+    overflow-x: hidden;
+  }
+  .about-main p{
+    margin-top: 25px;
+  }
+
+  
+
+
+/* ************************************************************ Mobile ********************************************************* */  

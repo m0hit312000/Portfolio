@@ -1,11 +1,12 @@
 import React,{ Component } from  'react';
-import About from '../AboutMeComponent';
-import Project from '../ProjectComponent';
-import Contact from '../ContactMe';
+import About from '../AboutMe/AboutMeComponent';
+import Project from '../Project/ProjectComponent';
+import Contact from '../Contact/ContactMe';
+import './home.css';
 
 function RenderLandingPage(){
     return(
-        <div>
+        <div className="main-page">
           <div className="triangle_right"></div>
           <div className="profile_pic"></div>
           <div className="name_head">
