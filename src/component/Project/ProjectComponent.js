@@ -46,8 +46,8 @@ class Project extends Component
               <div className="project-content">
                  <div className="card-area">
                      <div className="buttons">
-                        <button className="next" onClick={() => this.nextProperty()} disabled={property.index === project.properties.length-1}>Next</button>
-                        <button className="previous" onClick={() => this.previousProperty()} disabled={property.index === 0}>Prev</button>
+                        <button className="next fa fa-chevron-left" aria-hidden="true" onClick={() => this.nextProperty()} disabled={property.index === project.properties.length-1}></button>
+                        <button className="previous fa fa-chevron-right" aria-hidden="true" onClick={() => this.previousProperty()} disabled={property.index === 0}></button>
                      </div>
                      
                      <div className={`card-carousel active-card-${property.index}`}>
